@@ -61,14 +61,11 @@ float grayScaleByLumino(float3 color)
 
 float4 GetEdgeGeorge(float2 coord, float2 pixelSize)
 {
-    float4 lum = float4(0.30, 0.59, 0.11, 1);
-
     float2 current = coord;
     float avrg = 0;
 
     float kernelValue;
     float4 currentColor;
-    float4 resultColor;
     float grayScale;
 
     float4 result;
